@@ -1,13 +1,232 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html , body , #root  {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+  background-color: black;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header__title {
+  color: white;
+  text-decoration: underline black;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 500;
+  line-height: 0.9;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+  margin-left: 1rem;
+  padding-right: 1rem;
+}
+
+main {
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+main h2 {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 1rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  background-color: black;
+  color: white;
+  height: 3.5rem;
+  justify-content: center;
+}
+
+.cart__amount {
+  position: absolute;
+    top: 15px;
+    right: 75px;
+    color: white;
+    font-size: 16px;
+    background-color: red;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.item__img {
+  width: 200px;
+  height: auto;
+}
+
+.load {
+  margin-left: 4rem;
+}
+
+.nav {
+  margin-right: 4rem;
+}
+
+/**/
+.products{
+  padding: 6rem 0;
+}
+
+.products h2{
+  text-align: center;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--granite-gray);
+  margin-bottom: 3rem;
+}
+
+.product-price{
+  font-size: 1.15rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.cardButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.fa-minus {
+  color: red;
+  margin-top: 4px;
+}
+
+.fa-plus {
+  color: green;
+  margin-top: 4px;
+}
+
+.price {
+  margin-bottom: 0;
+}
+
+.quantity {
+  font-family: 'Montserrat',sans-serif;
+  font-size: large;
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.homeBtn {
+  background-color: #212121;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.carta {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 350px;
+  margin: auto auto 25px auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.carta button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.carta button:hover {
+  opacity: 0.7;
+}
+
+.cardTitle {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.cardImg {
+  width:325px; 
+  height:325px; 
+  object-fit:cover;
+}
+
+.catStyle {
+  font-weight: 600;
+}
+
+.info {
+  padding: 1rem;
+  border: black 1px solid;
+}
+
+.rowW {
+  flex-shrink: 0;
+  max-width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-top: 0;
+}
+
+.cartaImg {
+  width: 325px;
+  height: 325px;
+  object-fit: cover;
 }
