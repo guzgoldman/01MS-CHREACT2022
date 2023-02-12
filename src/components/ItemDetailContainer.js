@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
             progress: 0,
             theme: "dark",
         });
-        const productosCollection = collection(db, "productos")
+        const productosCollection = collection(db, "products")
         const referencia = doc(productosCollection, id)
         const pedido = getDoc(referencia)
         pedido

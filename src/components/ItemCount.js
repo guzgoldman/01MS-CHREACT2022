@@ -16,18 +16,17 @@ const ItemCount = ({ stock, onAdd     }) => {
     const handleConfirmar = () => {
         onAdd(contador)
     }
-    const handleResetear = () => {
-        setContador(0)
-    }
     return (
         <div className='itemCount'>
-            <Button onClick={handleResetear}>Reset</Button>
+            <div className='pbtn'>
+                <Button className='btn1 abtn' disabled={contador === 0} onClick={handleRestar}>-</Button>
+                <p className='count'>{contador}</p>
+                <Button className='btn1 abtn' disabled={contador === stock} onClick={handleSumar}>+</Button>
+            </div>
             <br />
-            <Button disabled={contador === stock} onClick={handleSumar}>+</Button>
-            <p>{contador}</p>
-            <Button disabled={contador === 0} onClick={handleRestar}>-</Button>
-            <br />
-            {<Button disabled={contador < 1 || stock < 1} onClick={handleConfirmar}>Confirmar</Button>}
+            <div className='fbtn'>
+                {<Button className='btn2 abtn' disabled={contador < 1 || stock < 1} onClick={handleConfirmar}>Confirmar</Button>}
+            </div>
         </div>
     )
 }

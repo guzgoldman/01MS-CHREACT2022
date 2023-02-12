@@ -8,9 +8,8 @@ export const useCarrito = () => {
     const valorDelContexto = useContext(contexto)
     return valorDelContexto
 }
-    const CustomProvider = ({ children }) => {
+const CustomProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([])
-    //const [totalProductos, setTotalProductos] = useState(0);
     
     const agregarProducto = (producto, cantidad) => {
         if(estaEnCarrito(producto.id)){
@@ -36,6 +35,8 @@ export const useCarrito = () => {
         setCarrito([])
         totalProducto(0)
     }
+
+    const totalCarrito = carrito.reduce((sum, product) => sum + product.price * product.cantidad, 0)
     
     const estaEnCarrito = (id) => {
         carrito.find((x) => x.id === id)
@@ -59,6 +60,7 @@ export const useCarrito = () => {
         vaciarCarrito: vaciarCarrito,
         estaEnCarrito: estaEnCarrito,
         eliminarProducto: eliminarProducto,
+        totalCarrito: totalCarrito
     }
     return (
         <Provider value={valorDelContexto}>

@@ -65,106 +65,19 @@ footer p {
   justify-content: center;
 }
 
-.greeting {
-  display: flex;
-  align-items: center;
-  margin: 2rem;
-  background-color: black;
-  color: white;
-  height: 3.5rem;
-  justify-content: center;
-}
-
 .cart__amount {
   position: absolute;
     top: 15px;
     right: 75px;
-    color: white;
+    color: black;
     font-size: 16px;
-    background-color: red;
+    background-color: white;
     padding: 3px;
     border-radius: 3px;
 }
 
-.item__img {
-  width: 200px;
-  height: auto;
-}
-
-.load {
-  margin-left: 4rem;
-}
-
 .nav {
   margin-right: 4rem;
-}
-
-/**/
-.products{
-  padding: 6rem 0;
-}
-
-.products h2{
-  text-align: center;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--granite-gray);
-  margin-bottom: 3rem;
-}
-
-.product-price{
-  font-size: 1.15rem;
-  font-weight: 500;
-  opacity: 0.6;
-}
-
-.price-quantity {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 7px;
-}
-
-.cardButtons {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  font-size: 16px;
-}
-
-.fa-minus {
-  color: red;
-  margin-top: 4px;
-}
-
-.fa-plus {
-  color: green;
-  margin-top: 4px;
-}
-
-.price {
-  margin-bottom: 0;
-}
-
-.quantity {
-  font-family: 'Montserrat',sans-serif;
-  font-size: large;
-  font-weight: 500;
-}
-
-.text-center {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.homeBtn {
-  background-color: #212121;
-  color: white;
-  border: none;
-  padding: 6px;
-  border-radius: 3px;
 }
 
 .carta {
@@ -179,6 +92,7 @@ footer p {
   color: black;
   font-size: 22px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .carta button {
@@ -193,11 +107,8 @@ footer p {
   font-size: 18px;
 }
 
-.carta button:hover {
-  opacity: 0.7;
-}
-
 .cardTitle {
+  font-family: 'Montserrat', sans-serif;
   margin-top: 8px;
   font-size: 18px;
 }
@@ -217,16 +128,169 @@ footer p {
   border: black 1px solid;
 }
 
-.rowW {
-  flex-shrink: 0;
-  max-width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-top: 0;
+.productInfo h1, h4, p, span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
 }
 
-.cartaImg {
-  width: 325px;
-  height: 325px;
-  object-fit: cover;
+.productInfo h1{
+  margin-bottom: 0;
+}
+
+.productInfo .desc {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.productInfo span {
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.productInfo {
+  margin-top: 10px;
+}
+
+.count {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.finalBtn {
+  margin-top: 10px;
+  margin-left: 40.6%;
+}
+
+.itemCount .btn2, .btn3 {
+  align-items: center;
+}
+
+.btn3 {
+  margin-left: 10px;
+}
+
+.fbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.pbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemCount {
+  margin-top: 10px;
+}
+
+.abtn {
+  background-color: #212529;
+  border: 0;
+}
+
+.btn:disabled {
+  background-color: #212529;
+}
+
+.abtn:hover {
+  background-color: #6c757d;
+}
+
+.cardM {
+  margin: 0 5px;
+}
+
+main .container .row h2 {
+  margin: 25px 0;
+}
+
+
+
+
+.cartAlign div{
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgCart{
+  aspect-ratio: 2/2;
+  object-fit:cover;
+  width: 100%;
+}
+
+.detailAlign div{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.btnCart button,
+.btnCart a{
+  width: 8rem;
+  margin-right:1rem;
+}
+
+.loadingPages{
+  padding-top: 2rem;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.formCheckout label {
+  margin-top: 1rem;
+}
+
+.formCheckout Button {
+  margin: 1rem 0;
+}
+
+.checkoutAlign,
+.marginCard{
+  margin: 1rem;
+}
+
+.cardBtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.carta p {
+  margin-bottom: 0.5rem;
+}
+
+.carta h1 {
+  margin-bottom: 0;
+}
+
+.mainCss h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.paddingTop{
+  padding-top: 2rem;
+}
+
+.material-icons {
+  line-height: 1.5;
 }

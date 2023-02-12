@@ -1,28 +1,26 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import { NavLink } from "react-router-dom"
-import Filter from './Filter'
+import { Nav } from 'react-bootstrap'
 
-const Navbar = (props) => {
-
-    const { isHeader, textLinkFooter, hrefLinkFooter } = props
-
-    if (isHeader) {
-        return (
-            <nav className="nav">
-                <Filter/>
-                <NavLink to="/cart">
-                    <CartWidget/>
-                </NavLink>
-            </nav>
-        )
-    } else {
-        return (
-            <nav className="nav">
-                <a href={hrefLinkFooter}>{textLinkFooter}</a>
-            </nav>
-        )
-    }
+const Navbar = () => {
+    const linkData = [
+        {path: '/', nombre:'all'},
+        {path: '/category/cd', nombre:'cd'},
+        {path: '/category/vinyl', nombre:'vinyl'}
+    ]
+    return (
+        <nav className="nav">
+            {linkData.map(({path, nombre}) =>(
+                <Nav.Link as={NavLink} to={path} key={nombre}>
+                    {nombre}
+                </Nav.Link>
+            ))}
+            <NavLink to="/cart">
+                <CartWidget/>
+            </NavLink>
+        </nav>
+    )
 }
 
 export default Navbar

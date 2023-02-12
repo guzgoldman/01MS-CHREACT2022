@@ -3,7 +3,9 @@ import { useCarrito } from './CustomProvider'
 import ItemCount from './ItemCount'
 import Button from 'react-bootstrap/Button'
 import { toast } from 'react-toastify'
-import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 
 
@@ -23,7 +25,7 @@ const ItemDetail = ({ producto }) => {
 
     const handleClick = () => {
         agregarProducto(producto, cantidad)
-        toast.success(`You added ${cantidad} ${producto.title} to cart`, {
+        toast.success(`You added x${cantidad} "${producto.title}" to cart`, {
             position: "bottom-right",
             autoClose: 5000,
             hideProgressBar: true,
@@ -36,16 +38,19 @@ const ItemDetail = ({ producto }) => {
     };
 
     return (
-        <div className='detail'>
-            <img src={producto.img} alt="" />
-            <ul>
-                <li>{producto.title}</li>
-                <li>USD{producto.price}</li>
-            </ul>
-            <ItemCount stock={producto.stock} onAdd={onAdd} />
-            {confirmado && <Button onClick={handleClick} id="Añadiracarrito" >Add to cart</Button>}
-            <Link to="/"><Button id='Backtoproducts' >Back</Button> </Link>
-        </div>
+        <Container>
+            <Row>
+                <Col className='row' md={6}><img src={producto.img} alt={producto.title} /></Col>
+                <Col className='productInfo' md={6}>
+                    <h1>{producto.title} ({producto.category})</h1>
+                    <h4>{producto.artist}</h4>
+                    <p className='desc'>{producto.description}</p>
+                    <span>USD {producto.price}</span>
+                    <ItemCount stock={producto.stock} onAdd={onAdd} />
+                    {confirmado && <Button className='finalBtn abtn' onClick={handleClick}>Add to cart</Button>}
+                </Col>
+            </Row>
+        </Container>
     );
 }
 
