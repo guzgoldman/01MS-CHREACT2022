@@ -32,7 +32,7 @@ const Checkout = ({formData}) => {
             {carrito.map((product) =>{
                     return(
                         <Row key={product.id} className='cartAlign'>
-                            <Col>{product.title}</Col>
+                            <Col>{product.title} ({product.category})</Col>
                             <Col>{product.cantidad}</Col>
                             <Col>USD {product.price} per unit.</Col>
                         </Row>
