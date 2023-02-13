@@ -17,3 +17,21 @@ a finalizar la compra ingresando los datos solicitados.
 - react-toastify
 - firebase
 
+#### Imagenes del proyecto:
+Catalogo general:
+![1](https://imgur.com/2q6UWhR)
+
+Catalogo filtrado:
+![2](https://imgur.com/NsACvQo)
+
+Detalles del producto:
+![3](https://imgur.com/uvieSgB)
+
+Carrito:
+![4](https://imgur.com/t7081bD)
+
+Checkout:
+![5](https://imgur.com/IWUusOJ)
+
+Compra finalizada:
+![6](https://imgur.com/FTc6n2q)
