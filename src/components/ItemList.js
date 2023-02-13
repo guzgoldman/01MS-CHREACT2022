@@ -7,7 +7,7 @@ const ItemList = ({ products }) => {
         <section className='row'>
             {products.map((producto) => {
                 return (
-                    <Col className="cardM" md={4}>
+                    <Col className="cardM" md>
                         <Item producto={producto} key={producto.id} />
                     </Col>
                 )
