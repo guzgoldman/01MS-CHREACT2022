@@ -19,19 +19,19 @@ a finalizar la compra ingresando los datos solicitados.
 
 #### Imagenes del proyecto:
 Catalogo general:
-![1](https://imgur.com/2q6UWhR)
+![1](https://imgur.com/2q6UWhR.png)
 
 Catalogo filtrado:
-![2](https://imgur.com/NsACvQo)
+![2](https://imgur.com/NsACvQo.png)
 
 Detalles del producto:
-![3](https://imgur.com/uvieSgB)
+![3](https://imgur.com/uvieSgB.png)
 
 Carrito:
-![4](https://imgur.com/t7081bD)
+![4](https://imgur.com/t7081bD.png)
 
 Checkout:
-![5](https://imgur.com/IWUusOJ)
+![5](https://imgur.com/IWUusOJ.png)
 
 Compra finalizada:
-![6](https://imgur.com/FTc6n2q)
+![6](https://imgur.com/FTc6n2q.png)
