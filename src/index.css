@@ -33,7 +33,7 @@ html , body , #root  {
   font-weight: 500;
   line-height: 0.9;
   font-size: 2rem;
-  margin-left: 4rem;
+  margin-left: 6.5rem;
 }
 
 .header__link {
@@ -68,7 +68,7 @@ footer p {
 .cart__amount {
   position: absolute;
     top: 15px;
-    right: 75px;
+    right: 115px;
     color: black;
     font-size: 16px;
     background-color: white;
@@ -77,7 +77,7 @@ footer p {
 }
 
 .nav {
-  margin-right: 4rem;
+  margin-right: 6.5rem;
 }
 
 .carta {
@@ -201,12 +201,13 @@ footer p {
   background-color: #6c757d;
 }
 
-.cardM {
-  margin: 0 5px;
-}
-
 main .container .row h2 {
   margin: 25px 0;
+}
+
+.mainContainer {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 

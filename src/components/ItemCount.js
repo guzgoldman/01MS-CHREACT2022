@@ -3,7 +3,7 @@ import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 
 
-const ItemCount = ({ stock, onAdd     }) => {
+const ItemCount = ({ stock, onAdd }) => {
     const [contador, setContador] = useState(0)
     const handleSumar = () => {
         if (contador < stock) {

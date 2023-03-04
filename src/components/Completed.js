@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useCarrito } from './CustomProvider'
 
 
-const Checkout = ({formData}) => {
+const Completed = ({formData}) => {
 
     const {carrito,vaciarCarrito,totalCarrito} = useCarrito () 
 
@@ -46,4 +46,4 @@ const Checkout = ({formData}) => {
     )
 }
 
-export default Checkout
+export default Completed

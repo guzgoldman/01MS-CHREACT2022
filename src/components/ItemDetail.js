@@ -38,19 +38,17 @@ const ItemDetail = ({ producto }) => {
     };
 
     return (
-        <Container>
-            <Row>
-                <Col className='row' md={6}><img src={producto.img} alt={producto.title} /></Col>
-                <Col className='productInfo' md={6}>
-                    <h1>{producto.title} ({producto.category})</h1>
-                    <h4>{producto.artist}</h4>
-                    <p className='desc'>{producto.description}</p>
-                    <span>USD {producto.price}</span>
-                    <ItemCount stock={producto.stock} onAdd={onAdd} />
-                    {confirmado && <Button className='finalBtn abtn' onClick={handleClick}>Add to cart</Button>}
-                </Col>
-            </Row>
-        </Container>
+        <Row>
+            <Col className='row' md={6}><img src={producto.img} alt={producto.title} /></Col>
+            <Col className='productInfo' md={6}>
+                <h1>{producto.title} ({producto.category})</h1>
+                <h4>{producto.artist}</h4>
+                <p className='desc'>{producto.description}</p>
+                <span>USD {producto.price}</span>
+                <ItemCount stock={producto.stock} onAdd={onAdd} />
+                {confirmado && <Button className='finalBtn abtn' onClick={handleClick}>Add to cart</Button>}
+            </Col>
+        </Row>
     );
 }
 

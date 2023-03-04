@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Col, Form, Row } from 'react-bootstrap'
-import Checkout from './Checkout'
+import Completed from './Completed'
 
 const CartCheckout = () => {
     
@@ -36,7 +36,7 @@ const CartCheckout = () => {
     
     return (
     <Container className='paddingTop'>
-        {showCheckout ? (<Checkout formData={formData}/>) 
+        {showCheckout ? (<Completed formData={formData}/>) 
         : (
             <Row className='justify-content-md-center'>
                 <Col xs={6} className='formCheckout'>

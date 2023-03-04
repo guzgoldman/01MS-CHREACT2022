@@ -3,11 +3,12 @@ import ItemDetailContainer from './ItemDetailContainer';
 import { Route, Routes } from 'react-router-dom';
 import CartContainer from './CartContainer';
 import CartCheckout from './CartCheckout';
+import { Container } from 'react-bootstrap';
 
 
 function Main() {
     return (
-        <main>
+        <Container className='mainContainer'>
             <Routes>
                 <Route path="/" element={<ItemListContainer />} />
                 <Route path="/category/:category" element={<ItemListContainer />} />
@@ -15,7 +16,7 @@ function Main() {
                 <Route path='/cart' element={<CartContainer/>}/>
                 <Route path='/checkout' element={<CartCheckout/>}/>
             </Routes>
-        </main>
+        </Container>
     );
 }
 export default Main;

@@ -4,13 +4,8 @@ import { db } from "../firebase"
 import { collection, getDocs, query, where } from "firebase/firestore"
 import { useParams } from "react-router-dom"
 import { toast } from 'react-toastify'
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-
-
 
 const ItemListContainer = () => {
-
 
     const [products, setProducts] = useState([]);
     const { category } = useParams();
@@ -68,12 +63,7 @@ const ItemListContainer = () => {
     }, [category])
 
     return (
-        <Container>
-            <Row className="mainCss">
-                <h2>CATALOGUE</h2>
-                <ItemList products={products}/>
-            </Row>
-        </Container>
+        <ItemList products={products}/>
     )
 }
 
