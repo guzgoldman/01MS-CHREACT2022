@@ -25,7 +25,7 @@ const ItemCount = ({ stock, onAdd }) => {
             </div>
             <br />
             <div className='fbtn'>
-                {<Button className='btn2 abtn' disabled={contador < 1 || stock < 1} onClick={handleConfirmar}>Confirmar</Button>}
+                {<Button className='btn2 abtn' disabled={contador < 1 || stock < 1} onClick={handleConfirmar}>Confirm</Button>}
             </div>
         </div>
     )
