@@ -36,8 +36,8 @@ const CustomProvider = ({ children }) => {
         totalProducto(0)
     }
 
-    const totalCarrito = carrito.reduce((sum, product) => sum + product.price * product.cantidad, 0)
-    
+    const totalCarrito = carrito.reduce((sum, product) => sum + product.price * product.cantidad, 0).toFixed(2);
+
     const estaEnCarrito = (id) => {
         carrito.find((x) => x.id === id)
     }
