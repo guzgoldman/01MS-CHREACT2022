@@ -7,7 +7,7 @@ const Header = ({children}) => {
         <>
             <header className="header">
                 <Link to="/">
-                    <h1 className="header__title">0&1 <br />Music Store</h1>
+                   <h1>Hola</h1>
                 </Link>
                 {children}
                 <Navbar
